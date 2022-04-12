@@ -1,0 +1,29 @@
+extends base.pug
+block scripts
+  script(src='/static/index.js')
+
+block style 
+    style
+        include ../static/style.css
+
+block content 
+    nav#navbar 
+            ul
+                li #[a(href="/") About] 
+                li #[a(href="/") Home] 
+                li #[a(href="/") Servies]
+                li #[a(href="/") class Info]
+                li #[a(href="/") contact Us]
+    .container 
+        h1.contact  Contact Us   
+        form(action="/contact",method="post", class="myform")
+            input(type="text",class="myinput",name='name',placeholder="Enter Your Name")    
+            input(type="phone",class="myinput",name='phone',placeholder="Enter Your Phone No.")    
+            input(type="email",class="myinput",name='email',placeholder="Enter Your Email")    
+            input(type="text",class="myinput",name='address',placeholder="Enter Your Address")    
+            textarea(name="", cols="30", rows="10",class="myinput",placeholder="Write About Yourself")    
+            button(class='btn') 
+             | submit   
+
+    footer#footer 
+            |Copyright © 2022 Dance academy All Rights Reserved

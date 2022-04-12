@@ -1,0 +1,44 @@
+doctype html 
+html 
+    head 
+      style
+        include ../static/style.css
+    
+    body 
+
+        nav#navbar 
+            ul
+                li #[a(href="/") About] 
+                li #[a(href="/") Home] 
+                li #[a(href="/") Servies]
+                li #[a(href="/") class Info]
+                li #[a(href="/") contact Us]
+        section#introsection
+             | Welcome to dance academy  
+
+        section#mission 
+            h1 our mission 
+            .maincard  
+                .card 
+                    h3 Lorem, ipsum.
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consequuntur minus, modi et nemo quis reiciendis aut fugit voluptas quisquam incidunt sunt expedita facilis iure. Enim officia vero in ut. 
+                .card 
+                    h3 Lorem, ipsum.
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consequuntur minus, modi et nemo quis reiciendis aut fugit voluptas quisquam incidunt sunt expedita facilis iure. Enim officia vero in ut. 
+                .card 
+                    h3 Lorem, ipsum.
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consequuntur minus, modi et nemo quis reiciendis aut fugit voluptas quisquam incidunt sunt expedita facilis iure. Enim officia vero in ut. 
+
+        section#sponsorsection 
+            h2 Our sponsors 
+            .sponser 
+                img(src="../static/spnonser.jpg", alt="sponsor image")
+                img(src="../static/spnonser.jpg", alt="sponsor image")
+                img(src="../static/spnonser.jpg", alt="sponsor image")
+                img(src="../static/spnonser.jpg", alt="sponsor image")
+        
+        footer#footer 
+            |Copyright © 2022 Dance academy All Rights Reserved
+
+        script 
+          include ../static/index.js 
